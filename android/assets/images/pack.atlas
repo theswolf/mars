@@ -1,0 +1,330 @@
+
+pack.png
+size: 810,748
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+logo
+  rotate: false
+  xy: 431, 314
+  size: 379, 434
+  orig: 379, 434
+  offset: 0, 0
+  index: -1
+rocket
+  rotate: false
+  xy: 2, 2
+  size: 427, 746
+  orig: 427, 746
+  offset: 0, 0
+  index: -1
+
+pack2.png
+size: 490,490
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+fire/fire-0
+  rotate: false
+  xy: 2, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-1
+  rotate: false
+  xy: 2, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-3
+  rotate: false
+  xy: 2, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-2
+  rotate: false
+  xy: 2, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-10
+  rotate: false
+  xy: 100, 198
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-11
+  rotate: false
+  xy: 198, 296
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-12
+  rotate: false
+  xy: 296, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-13
+  rotate: false
+  xy: 2, 2
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-14
+  rotate: false
+  xy: 100, 100
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-15
+  rotate: false
+  xy: 198, 198
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-16
+  rotate: false
+  xy: 296, 296
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-17
+  rotate: false
+  xy: 394, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-18
+  rotate: false
+  xy: 100, 2
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-19
+  rotate: false
+  xy: 198, 100
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-20
+  rotate: false
+  xy: 296, 198
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-21
+  rotate: false
+  xy: 394, 296
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-22
+  rotate: false
+  xy: 198, 2
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-23
+  rotate: false
+  xy: 296, 100
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-24
+  rotate: false
+  xy: 394, 198
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-4
+  rotate: false
+  xy: 2, 296
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-5
+  rotate: false
+  xy: 100, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-6
+  rotate: false
+  xy: 2, 198
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-7
+  rotate: false
+  xy: 100, 296
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-8
+  rotate: false
+  xy: 198, 394
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+fire/fire-9
+  rotate: false
+  xy: 2, 100
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+
+pack3.png
+size: 1010,390
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boom/boom-0
+  rotate: false
+  xy: 2, 262
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-1
+  rotate: false
+  xy: 2, 132
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-10
+  rotate: false
+  xy: 608, 132
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-11
+  rotate: false
+  xy: 810, 262
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-2
+  rotate: false
+  xy: 204, 262
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-3
+  rotate: false
+  xy: 2, 2
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-4
+  rotate: false
+  xy: 204, 132
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-5
+  rotate: false
+  xy: 406, 262
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-6
+  rotate: false
+  xy: 204, 2
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-7
+  rotate: false
+  xy: 406, 132
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-8
+  rotate: false
+  xy: 608, 262
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+boom/boom-9
+  rotate: false
+  xy: 406, 2
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+
+pack4.png
+size: 579,579
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+planets/mars
+  rotate: false
+  xy: 2, 2
+  size: 577, 577
+  orig: 577, 577
+  offset: 0, 0
+  index: -1
+
+pack5.png
+size: 544,544
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+planets/moon
+  rotate: false
+  xy: 2, 2
+  size: 542, 542
+  orig: 542, 542
+  offset: 0, 0
+  index: -1
+
+pack6.png
+size: 539,539
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+planets/earth
+  rotate: false
+  xy: 2, 2
+  size: 537, 537
+  orig: 537, 537
+  offset: 0, 0
+  index: -1
