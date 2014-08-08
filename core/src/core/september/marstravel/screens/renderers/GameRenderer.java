@@ -5,6 +5,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 
+import core.september.marstravel.gameobjects.Rocket;
 import core.september.marstravel.screens.controllers.GameController;
 import core.september.marstravel.screens.controllers.GameController.O9InputListener;
 import core.september.marstravel.utils.BaseGameRenderer;
@@ -55,6 +56,12 @@ public class GameRenderer extends BaseGameRenderer{
 		});
 		
 		stage.getCamera().translate(Constants.MAP_WIDTH / 2, 0, 0);
+		addRocket();
+	}
+
+	private void addRocket() {
+		Rocket rocket = new Rocket(stage.getCamera(),0.05f);
+		stage.addActor(rocket);
 	}
 
 	@Override
@@ -67,11 +74,13 @@ public class GameRenderer extends BaseGameRenderer{
 	public void render() {
 		Gdx.gl.glClearColor(0.55f, 0.55f, 0.55f, 1f);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		Gdx.gl.glEnable(GL20.GL_ARRAY_BUFFER_BINDING);
 		
 		//stage.getCamera().apply(null);
 		//stage.draw();
 		mapRenderer.setView((OrthographicCamera) stage.getCamera());
 		mapRenderer.render();
+		stage.draw();
 		
 //		Gdx.gl.glClearColor(0.55f, 0.55f, 0.55f, 1f);
 //		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
