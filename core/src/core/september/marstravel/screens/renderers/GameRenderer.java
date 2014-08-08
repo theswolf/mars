@@ -22,10 +22,10 @@ public class GameRenderer extends BaseGameRenderer{
 			public boolean keyDown(int keycode) {
 				OrthographicCamera cam = (OrthographicCamera) stage.getCamera();
 				if(Gdx.input.isKeyPressed(Input.Keys.A)) {
-		            cam.zoom += 0.5;
+		            cam.zoom += 0.02;
 		        }
 		        if(Gdx.input.isKeyPressed(Input.Keys.Q)) {
-		            cam.zoom -= 0.5;
+		            cam.zoom -= 0.02;
 		        }
 		        if(Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
 		            if (cam.position.x > Constants.GAME_WIDTH / 2)
