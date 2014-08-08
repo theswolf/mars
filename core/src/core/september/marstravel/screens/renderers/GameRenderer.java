@@ -53,6 +53,8 @@ public class GameRenderer extends BaseGameRenderer{
 		        return true;
 			}
 		});
+		
+		stage.getCamera().translate(Constants.MAP_WIDTH / 2, 0, 0);
 	}
 
 	@Override
