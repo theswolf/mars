@@ -28,11 +28,17 @@ public class Constants {
 	public final static String ATLAS="images/pack.atlas";
 	public final static String MAP="map/skymap.tmx";
 	
+//	public final static int GAME_HEIGHT = 1280;
+//	public final static int GAME_WIDTH = 720;
+	
 	public final static int GAME_HEIGHT = 480;
 	public final static int GAME_WIDTH = 320;
 	
 	public final static int MAP_HEIGHT = 4000;
 	public final static int MAP_WIDTH = 2000;
+	public static final float TIME_STEP = 1/45f;
+	public static final int VELOCITY_ITERATIONS = 10;
+	public static final int POSITION_ITERATIONS = 10;
 	
 	
 	
