@@ -13,13 +13,15 @@ import core.september.marstravel.utils.Assets;
 import core.september.marstravel.utils.BaseB2D;
 import core.september.marstravel.utils.Constants;
 
-public class Earth extends BaseB2D{
-	public Earth(Camera camera,float scale, World world) {
-		super(world,scale,Assets.instance().RES_EARTH[0]);
+public class Mars extends BaseB2D{
+	//private TextureRegion mars;
+	public Mars(Camera camera,float scale, World world) {
+		super(world,scale,Assets.instance().RES_MARS[0]);
 		//Gdx.gl20.GL_VIEWPORT;
 		//Viewport currentViewport = Reference.instance().getCurrentViewport();
-		setPosition(Constants.MAP_WIDTH / 2 - getWidth()/2,0);
-		createBody(BodyType.StaticBody, 1f, 0f,null);//, 100);
+	
+		setPosition(Constants.MAP_WIDTH / 2 - getWidth()/2 + 10, Constants.MAP_HEIGHT / 2);
+		createBody(BodyType.StaticBody, 1f, 1f,null);//, 100);
 		
 	
 	}
@@ -32,9 +34,9 @@ public class Earth extends BaseB2D{
 	
 //	@Override
 //    public void render (Batch batch) {
-//        batch.draw(get, position.x,position.y,
-//        		earth.getRegionWidth()*scale,getRegionHeight()*scale);
-//        draw(batch);
+//        batch.draw(mars, position.x,position.y,
+//        		mars.getRegionWidth()*scale,mars.getRegionHeight()*scale);
+//      
 //
 //    }
 
@@ -47,7 +49,7 @@ public class Earth extends BaseB2D{
 
 //	@Override
 //	public TextureRegion getTexture() {
-//		return earth;
+//		return mars;
 //	}
 
 	
@@ -56,5 +58,4 @@ public class Earth extends BaseB2D{
 	public void update(float delta) {
 		//position = body.getPosition();
 	}
-
 }

@@ -17,7 +17,7 @@ import core.september.marstravel.utils.Constants;
 
 public class Rocket extends BaseB2D{
 
-	private Sprite rocket;
+	//private Sprite rocket;
 	
 
 //	private Camera camera;
@@ -26,57 +26,46 @@ public class Rocket extends BaseB2D{
 
 	
 	public Rocket(Camera camera,float scale, World world) {
-		super(world,scale);
-		rocket = new Sprite(Assets.instance().RES_ROCKET[0]);
-		
-		
-		position = new Vector2(Constants.MAP_WIDTH / 2 - rocket.getRegionWidth()*scale/2
-				, Constants.MAP_HEIGHT / 2 - rocket.getRegionHeight()*scale/2);
-		rocket.setPosition(position.x,position.y);
-		rocket.setSize(rocket.getRegionWidth()*scale, rocket.getRegionHeight()*scale);
+		super(world,scale,Assets.instance().RES_ROCKET[0]);
+		//this(Assets.instance().RES_ROCKET[0]);
+		setPosition(Constants.MAP_WIDTH / 2 -getWidth()/2 ,320);
 		createBody(BodyType.DynamicBody,1f, 0f, 1f);
 	
 	}
 	
 	
-	
-	@Override
-    public void render (Batch batch){
-//		  batch.draw(rocket, position.x,position.y,
-//				  rocket.getRegionWidth()*scale,rocket.getRegionHeight()*scale);
-		rocket.draw(batch);
 
-    }
-
-	@Override
-	public Vector2 getPosition() {
-		return position;
-	}
+//	@Override
+//	public Vector2 getPosition() {
+//		return position;
+//	}
 
 
 	@Override
 	public Shape getShape() {
 		PolygonShape shape = new PolygonShape();
-		shape.setAsBox(rocket.getRegionWidth()/2*scale
-				, rocket.getRegionHeight()/2*scale);
+		shape.setAsBox(getWidth()/2
+				, getHeight()/2);
 		return shape;
 	}
 
-
-
-	@Override
-	public TextureRegion getTexture() {
-		return rocket;
+	public Sprite getSprite() {
+		return this;
 	}
 
 
+	public Vector2 getOrigin() {
+		return new Vector2(getOriginX(),getOriginY());
+	}
+	
+	
 
 	@Override
 	public void update(float delta) {
-		position = body.getPosition().sub(rocket.getRegionWidth()*scale /2, rocket.getRegionHeight()*scale/2);
-		rocket.setPosition(position.x, position.y);
-		rocket.setOriginCenter();
-		rocket.setRotation(body.getAngle()*MathUtils.radiansToDegrees);
+		//position = body.getPosition().sub(getRegionWidth()*scale /2, getRegionHeight()*scale/2);
+		setPosition(body.getPosition().x-getWidth()/2, body.getPosition().y-getHeight()/2);
+		setOriginCenter();
+		setRotation(body.getAngle()*MathUtils.radiansToDegrees);
 	}
 	
 	

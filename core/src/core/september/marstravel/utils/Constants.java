@@ -32,6 +32,7 @@ public class Constants {
 //	public final static int GAME_WIDTH = 720;
 	
 	public final static int GAME_HEIGHT = 480;
+	public final static int VIEW_HEIGHT = 400;
 	public final static int GAME_WIDTH = 320;
 	
 	public final static int MAP_HEIGHT = 4000;
@@ -39,6 +40,9 @@ public class Constants {
 	public static final float TIME_STEP = 1/45f;
 	public static final int VELOCITY_ITERATIONS = 10;
 	public static final int POSITION_ITERATIONS = 10;
+	public static final float FUEL_LEVEL = 5;
+	public static final float MAX_ZOOM = 2;
+	public static final float MIN_ZOOM = 1;
 	
 	
 	
