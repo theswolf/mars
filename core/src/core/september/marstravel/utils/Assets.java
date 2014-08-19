@@ -22,6 +22,7 @@ public class Assets implements ResourceLifeCycle{
 	public final   AtlasRegion[] RES_MARS; 
 	public final   AtlasRegion[] RES_MOON; 
 	public final   AtlasRegion[] RES_EARTH; 
+	public final   AtlasRegion[] RES_LASER; 
 	public final   TiledMap MAP;
 	
 	public static Assets instance() {
@@ -40,6 +41,7 @@ public class Assets implements ResourceLifeCycle{
 		RES_MARS = getRegion(Constants.Resources.MARS.res);     
 		RES_MOON =getRegion( Constants.Resources.MOON.res);     
 		RES_EARTH = getRegion(Constants.Resources.EARTH.res);
+		RES_LASER = getRegion(Constants.Resources.LASER.res);
 		MAP = assetManager.get(Constants.MAP);
 		
 	}

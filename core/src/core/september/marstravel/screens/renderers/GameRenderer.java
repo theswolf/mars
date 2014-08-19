@@ -39,6 +39,14 @@ public class GameRenderer extends BaseGameRenderer{
 		controller.setListener(new O9InputListener() {
 			
 			@Override
+			public boolean keyUp(int keycode) {
+				if(getRocket() != null) {
+	        		getRocket().unpress();
+	        	}
+				return true;
+			}
+			
+			@Override
 			public boolean keyDown(int keycode) {
 				//OrthographicCamera cam = (OrthographicCamera) stage.getCamera();
 				if(Gdx.input.isKeyPressed(Input.Keys.A)) {
@@ -47,21 +55,30 @@ public class GameRenderer extends BaseGameRenderer{
 		        if(Gdx.input.isKeyPressed(Input.Keys.Q)) {
 		        	 ((OrthographicCamera)ortoCamera).zoom -= 0.02;
 		        }
-		        if(Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
-		            if ( ((OrthographicCamera)ortoCamera).position.x > Constants.GAME_WIDTH / 2)
-		            	 ((OrthographicCamera)ortoCamera).translate(-3, 0, 0);
+		        if(Gdx.input.isKeyPressed(Input.Keys.LEFT )) {
+//		            if ( ((OrthographicCamera)ortoCamera).position.x > Constants.GAME_WIDTH / 2)
+//		            	 ((OrthographicCamera)ortoCamera).translate(-3, 0, 0);
+		        	if(sprayEnabled()) {
+		        		getRocket().applyPressure(Rocket.LEFT);
+		        	}
 		        }
 		        if(Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
-		            if ( ((OrthographicCamera)ortoCamera).position.x <  Constants.MAP_WIDTH - Constants.GAME_WIDTH / 2)
-		            	 ((OrthographicCamera)ortoCamera).translate(3, 0, 0);
+//		            if ( ((OrthographicCamera)ortoCamera).position.x <  Constants.MAP_WIDTH - Constants.GAME_WIDTH / 2)
+//		            	 ((OrthographicCamera)ortoCamera).translate(3, 0, 0);
+		        	if(sprayEnabled()) {
+		        		getRocket().applyPressure(Rocket.RIGHT);
+		        	}
 		        }
 		        if(Gdx.input.isKeyPressed(Input.Keys.DOWN)) {
 		            if ( ((OrthographicCamera)ortoCamera).position.y > Constants.GAME_HEIGHT / 2)
 		            	 ((OrthographicCamera)ortoCamera).translate(0, -3, 0);
 		        }
 		        if(Gdx.input.isKeyPressed(Input.Keys.UP)) {
-		            if ( ((OrthographicCamera)ortoCamera).position.y < Constants.MAP_HEIGHT - Constants.GAME_HEIGHT / 2)
-		            	 ((OrthographicCamera)ortoCamera).translate(0, 3, 0);
+//		            if ( ((OrthographicCamera)ortoCamera).position.y < Constants.MAP_HEIGHT - Constants.GAME_HEIGHT / 2)
+//		            	 ((OrthographicCamera)ortoCamera).translate(0, 3, 0);
+		        	if(sprayEnabled()) {
+		        		getRocket().applyPressure(Rocket.UP);
+		        	}
 		        }
 		        if(Gdx.input.isKeyPressed(Input.Keys.W)) {
 		        	 ((OrthographicCamera)ortoCamera).rotate(-rotationSpeed, 0, 0, 1);
@@ -79,6 +96,14 @@ public class GameRenderer extends BaseGameRenderer{
 		addRocket(world);
 		ortoCamera.translate(Constants.MAP_WIDTH / 2, earth.getHeight()*1.3f, 0);
 	
+	}
+	
+	private Rocket getRocket() {
+		return rocket;
+	}
+	
+	private boolean sprayEnabled() {
+		return rocket != null && fire != null && fire.fuelLevel <= 0;
 	}
 	
 	private void addPlanets(World world) {
@@ -205,9 +230,6 @@ public class GameRenderer extends BaseGameRenderer{
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		Gdx.gl.glEnable(GL20.GL_ARRAY_BUFFER_BINDING);
 		
-		//stage.getCamera().apply(null);
-		//stage.draw();
-		
 		mapRenderer.setView((OrthographicCamera) ortoCamera);
 		
 		mapRenderer.render();
@@ -218,14 +240,6 @@ public class GameRenderer extends BaseGameRenderer{
 		fire.draw(mapRenderer.getSpriteBatch());
 		mapRenderer.getSpriteBatch().end();
 		sRenderer.render(world, ortoCamera.combined);
-//		Gdx.gl.glClearColor(0.55f, 0.55f, 0.55f, 1f);
-//		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-//		camera.update();
-//		renderer.setView(camera);
-//		renderer.render();
-//		batch.begin();
-//		font.draw(batch, "FPS: " + Gdx.graphics.getFramesPerSecond(), 10, 20);
-//		batch.end();
 		
 	}
 	

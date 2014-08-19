@@ -10,7 +10,8 @@ public class Constants {
 		BOOM(buildStringNumber("boom/boom-",12)),
 		EARTH(new String[]{"planets/earth"}),
 		MARS(new String[]{"planets/mars"}),
-		MOON(new String[]{"planets/moon"});
+		MOON(new String[]{"planets/moon"}),
+		LASER(buildlLaser("laser/", new String[]{"beamstart","beammid","beamend"}));
 		
 		public String [] res;
 		private static  String[] buildStringNumber(String prefix,int loop) {
@@ -20,9 +21,22 @@ public class Constants {
 			}
 			return ret;
 		}
+		private static  String[] buildlLaser(String prefix,String[] parts) {
+			
+			String[] ret = new String[parts.length*2];
+			int loop = 0;
+			for (int x = 0; x< parts.length; x++) {
+				ret[loop] = prefix+parts[x]+"1";
+				loop++;
+				ret[loop] =  prefix+parts[x]+"2";
+				loop++;
+			}
+			return ret;
+		}
 		private Resources(String[] res) {
 			this.res = res;
 		}
+		
 	}
 	
 	public final static String ATLAS="images/pack.atlas";
@@ -43,6 +57,7 @@ public class Constants {
 	public static final float FUEL_LEVEL = 5;
 	public static final float MAX_ZOOM = 2;
 	public static final float MIN_ZOOM = 1;
+	public static final float SPRAY_PROPULSION = 10;
 	
 	
 	

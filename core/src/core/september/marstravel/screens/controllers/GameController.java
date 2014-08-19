@@ -11,6 +11,7 @@ public class GameController extends BaseGameController{
 
 	public interface O9InputListener{
 		boolean keyDown(int keycode);
+		boolean keyUp(int keycode);
 	}
 	
 	private InputAdapter iAdapter;
@@ -21,6 +22,12 @@ public class GameController extends BaseGameController{
 			@Override
 			public boolean keyDown(int keycode) {
 				return listener.keyDown(keycode);
+			}
+			
+			@Override
+			public boolean keyUp(int keycode) {
+				// TODO Auto-generated method stub
+				return listener.keyUp(keycode);
 			}
 		};
 		Gdx.input.setInputProcessor(iAdapter);

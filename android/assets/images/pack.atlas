@@ -291,6 +291,54 @@ boom/boom-9
   index: -1
 
 pack4.png
+size: 396,66
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+laser/beamend1
+  rotate: false
+  xy: 2, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+laser/beamend2
+  rotate: false
+  xy: 68, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+laser/beammid1
+  rotate: false
+  xy: 134, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+laser/beammid2
+  rotate: false
+  xy: 200, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+laser/beamstart1
+  rotate: false
+  xy: 266, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+laser/beamstart2
+  rotate: false
+  xy: 332, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+
+pack5.png
 size: 579,579
 format: RGBA8888
 filter: Nearest,Nearest
@@ -303,7 +351,7 @@ planets/mars
   offset: 0, 0
   index: -1
 
-pack5.png
+pack6.png
 size: 544,544
 format: RGBA8888
 filter: Nearest,Nearest
@@ -316,7 +364,7 @@ planets/moon
   offset: 0, 0
   index: -1
 
-pack6.png
+pack7.png
 size: 539,539
 format: RGBA8888
 filter: Nearest,Nearest
