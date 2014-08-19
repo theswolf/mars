@@ -231,7 +231,6 @@ public class GameRenderer extends BaseGameRenderer{
 		Gdx.gl.glEnable(GL20.GL_ARRAY_BUFFER_BINDING);
 		
 		mapRenderer.setView((OrthographicCamera) ortoCamera);
-		
 		mapRenderer.render();
 		mapRenderer.getSpriteBatch().begin();
 		earth.draw(mapRenderer.getSpriteBatch());
